@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!--link CSS file-->
+    <link rel="stylesheet" href="CSSfile.css" type="text/CSS">
+
+    <!--link fontawesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!--meta tag-->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--link bootstrap-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+
+    <title>Royal Bengal Resort</title>
+
+  </head>
+
+  <body background="bookingbg.jpg">
+    <!--navbar-->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light bgopacity">
+      <a class="navbar-band" href="logo.png">
+        <img src="logo.png" alt="Royal Bengal Resort" height="65px">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="collapsibleNavbar">
+        <ul class="navbar-nav ml-auto text-center">
+        <li class="nav-item">
+          <a class="nav-link active" href="index.htm">Back to Homepage</a>
+        </li>
+        </ul>
+      </div>
+    </nav>
+    <p></p><br/>
+    <p></p>
+    <!--booking-->
+    <section class="container-fluid about text-center">
+        <h2>
+          <img src="frllft.png" width="50px">
+          Book Your Room(s)
+          <img src="frlrgt.png" width="50px">
+        </h2>
+        <p></p>
+    <!--form/booking-->
+    <div class="col-lg-12 text-left">
+        <div class="container">
+        
+            <form action="/action_page.php">
+            
+            <div class="form-group" id="rowstacksize_b">
+              <label for="name">Name:</label>
+              <input type="name" class="form-control"  placeholder="Enter Your name" required >
+            </div>
+            
+            <div class="form-group" id="rowstacksize_b">
+              <label for="email">Email address:</label>
+              <input type="email" class="form-control" placeholder="Your Email please" required>
+            </div>
+            
+            <div class="form-group"  id="rowstacksize_b">
+              <label for="sell">Choose your room:</label> 
+              
+              <select class="form-control" id="sel1" required>
+                            <option>AC Double Bed -4adult,2child</option>
+                            <option>AC Double Bed Delux -4adult,2child</option>
+                            <option>AC Double Bed Super Delux -4adult,2child</option>
+                            <option>AC Triple Bed -6adult,3child</option>
+                            <option>AC Triple Bed Delux -6adult,3child</option>
+                            <option>AC Triple Bed Super Delux -6adult,3child</option>
+                            <option>AC Four Bed -8adult,4child</option>
+                            <option>AC Suit -2adult,2child</option>
+                            <option>AC Suit Delux -2adult,2child</option>
+                            <option>Honeymoon Special Bed</option>
+                            <option>Non-AC Double Bed -4adult,2child</option>
+                            <option>Non-AC Four Bed -8adult,4child</option>
+                        </select>
+            </div> 
+            
+            <div class="image-fluid">
+                <div class="form-group"  id="rowstacksize_b">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="uname">Check In:</label>
+                                    <input type="date" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <label for="uname">Check Out:</label>
+                                    <input type="date" class="form-control" id="uname" placeholder="Enter username" name="uname" required>
+                                    <div class="valid-feedback">Valid.</div>
+                                    <div class="invalid-feedback">Please fill out this field.</div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+            
+            <div class="form-group"  id="rowstacksize_b">
+              <label for="phone number">Phone Number:</label>
+              <input type="number" class="form-control" placeholder="phone number" required>
+            </div>
+            
+            <div class="form-group"  id="rowstacksize_b">
+              <label for="best time for contact">Best time to contact you:</label>
+              <input type="best time for contact" class="form-control" placeholder="best time for contact" required>
+            </div>
+            
+            <div class="form-group"  id="rowstacksize_b">
+                <div class="form-group">
+                        <label for="sell">Payment mode:</label>
+                        <select class="form-control" id="sel1" required>
+                            <option></option>
+                            <option>Cash</option>
+                            <option>Debit Card</option>
+                            <option>Credit Card</option>
+                            <option>Cheque</option>
+                            <option>UPI Payment</option>
+                            <option>Online a/c transfer</option>
+                        </select>
+                      <div class="valid-feedback">Valid.</div>
+                      <div class="invalid-feedback">Please fill out this field.</div>
+                    </div>
+            </div>
+            
+            <div class="form-group form-check" >
+                      <label class="form-check-label">
+                        <input class="form-check-input" type="checkbox" name="remember" required> Agreed to Terms & Conditions.
+                        <div class="valid-feedback">Valid.</div>
+                        <div class="invalid-feedback">Check this checkbox to continue.</div>
+                      </label>
+            </div>
+            
+            <div class="col-lg-12" id="btn">
+                <p><button type="submit" class="btn btn-primary">submit</button></p>
+            </div>
+            
+            </form>
+        
+        </div>
+    </div>
+    </section>
+
+
+
+
+
+
+
+    <!--footer-->
+    <div class="container-fluid background-color-bg1 text-center">
+        <div class="row">
+          <div class="col-lg-12">
+            <h4>Check-in/out Time:</h4><br/>
+            <p>Check-in: 10:00 am</p>
+            <p>Check-out: 05:00 pm</p>
+            </div>
+          </div>  
+      </div>
+      <div class="container-fluid background-color-bg2 text-center">
+        <div class="row">
+        <div class="col-lg-12">
+        <p class="text-light">||All rights reserved@Royal Bengal Resort||</p>
+        <p class="text-light">Terms & Conditions | Privacy Policy</p>
+        </div>
+        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+      <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js" integrity="sha384-+YQ4JLhjyBLPDQt//I+STsc9iw4uQqACwlvpslubQzn4u2UU2UFM80nGisd026JF" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
